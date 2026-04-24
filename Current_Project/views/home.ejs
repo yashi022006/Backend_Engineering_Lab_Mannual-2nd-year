@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>My name is <%=stu.name%>..</h1>
+    <h2>My roll no. is <%=stu.roll_no%>..</h2>
+    <h3>My email is <%=stu.email%>..</h3>
+    <h4>My age is <%=stu.age%>..</h4>
+    <h5>my hobbies are <%=stu.hobbies%></h5>
+    <h6>my hobbies are <%stu.hobbies.forEach((hob)=>{%>
+        <%=hob%>
+        <%})%>
+        </h6>
+    <h6>my hobbies are <%for(let i=0;i<stu.hobbies.length;i++){%>
+       <%=stu.hobbies[i]%>
+    <%}%></h6>
+
+</body>
+</html>
